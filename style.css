@@ -1,0 +1,90 @@
+* {
+  color: #1a1d23;
+}
+
+main, header {
+  overflow: hidden;
+  background-color: #797d88;
+}
+
+.main-content {
+  background-color: #f3f7f7;
+}
+
+nav,
+footer {
+  background-color: #462255;
+}
+
+li.navbar-item {
+  display: flex;
+  flex-direction: row;
+}
+
+li.navbar-item > a {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+div.navbar-collapse > ul {
+  flex: 100%;
+}
+
+iframe {
+  width: 426px;
+  height: 240px;
+}
+
+.image-hobbies {
+  width: 426px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.center-content {
+  text-align: center;
+}
+
+address {
+  color: #ffffff8c;
+  font-size: 1rem;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.link-hobbies {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.div-img-hobbies {
+  margin: 1rem auto;
+}
+
+footer {
+
+  height: 3rem;
+  text-align: right;
+}
+
+footer > div {
+  display: table-cell;
+  height: 100%;
+  display: table;
+}
+
+#academic_experience > p {
+  text-align: justify;
+}
+
+button {
+  text-align: right;
+}
+
+
+
