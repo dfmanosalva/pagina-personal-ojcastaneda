@@ -12,9 +12,8 @@
     <title>Ejercicio página web personal</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark justify-content-md-end">
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark justify-content-md-end fixed-top">
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-
       </div>
       <button
         class="navbar-toggler"
@@ -30,23 +29,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="navbar-item col-lg-6 col-md-0"></li>
+          <li class="navbar-item col-lg-8 col-md-4"></li>
           <li class="navbar-item active col-lg-1 col-md-2">
             <a class="nav-link" href="#">Welcome</a>
           </li>
           <li class="navbar-item col-lg-1 col-md-2">
-            <a class="nav-link" href="#about_me">About me</a>
+            <a class="nav-link" href="#my_profile">My profile</a>
           </li>
           <li class="navbar-item col-lg-1 col-md-2">
             <a class="nav-link" href="#my_projects">My projects</a>
           </li>
           <li class="navbar-item col-lg-1 col-md-2">
             <a class="nav-link" href="#my_hobbies">My hobbies</a>
-          </li>
-          <li class="navbar-item col-lg-2 col-md-4">
-            <a class="nav-link" href="#academic_experience"
-              >My adacemic experience</a
-            >
           </li>
         </ul>
       </div>
@@ -55,18 +49,56 @@
       <div class="container-fluid">
         <div class="container main-content">
           <h1 class="center-content">Welcome to my website</h1>
+          <div class="container">
+            <div class="row">
+              <div class="center-content"><img src="templates/foto.jpg" alt="Profile picture"></div>
+            </div>
+            <h3 class="center-content">Music I like:</h3>
+            <div class="row vertical-align">
+              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
+                <h5> Halozy - Kanshou No Matenrou</h5>
+                <audio controls>
+                  <source src="audio/halozy-kanshou%20no%20matenrou.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
+                <h5> Halozy - Genryuu Kaiko</h5>
+                <audio controls>
+                  <source src="audio/Halozy%20-%20Genryuu%20Kaiko.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+            <div class="row vertical-align">
+              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
+                <h5> Imperial Circus Dead Decadence - Uta</h5>
+                <audio controls>
+                  <source src="audio/Imperial%20Circus%20Dead%20Decadence%20-%20Uta.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
+                <h5> Tatsh - Image Material</h5>
+                <audio controls>
+                  <source src="audio/Tatsh%20-%20IMAGE%20-MATERIAL-%20(Version%200).mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <div class="container-fluid">
         <div class="container main-content">
-          <h2 class="center-content">My Profile</h2>
+          <h2 class="center-content" ><span id="my_profile"></span>My Profile</h2>
           <div class="container">
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-12">
-                <section id="about_me">
-                  <h3>About me</h3>
+                <section>
+                  <h3>About me:</h3>
                   <ul>
                     <li>Name: Oscar Julián Castañeda Gutiérrez</li>
                     <li>Age: 19 years old</li>
@@ -76,7 +108,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12">
                 <section id="academic_experience">
-                  <h3>My academic experience</h3>
+                  <h3>My academic experience:</h3>
                   <p>
                     I am a graduate from the high school academic institution
                     ASPAEN Gimnasio la Fragua. I am currently on year away from
@@ -86,8 +118,8 @@
               </div>
             </div>
           </div>
-          <section id="my_projects">
-            <h3>My projects</h3>
+          <section class="center-content" >
+            <h2><span id="my_projects"></span>My projects</h2>
             <div class="container center-content">
               <div>
                 <h4>Meetspot</h4>
@@ -105,12 +137,12 @@
               </div>
             </div>
           </section>
-          <section id="my_hobbies">
-            <h3>My hobbies</h3>
+          <section class="center-content" >
+            <h2><span id="my_hobbies"></span>My hobbies</h2>
             <h4>Watching twitch:</h4>
             <div class="center-content">
               <iframe
-                src="https://player.twitch.tv/?channel=blackcatshooter&parent=www.example.com"
+                src="https://player.twitch.tv/?channel=blackcatshooter&parent=https://pagina-personal-ojcastaneda.herokuapp.com/"
                 frameborder="0"
                 allowfullscreen="true"
                 scrolling="no"
@@ -120,40 +152,40 @@
             </div>
             <h4>Playing variety games:</h4>
             <div class="container">
-              <div class="row div-img-hobbies">
-                <div class="col-lg-6 col-md-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
                   <a class="link-hobbies" href="https://www.minecraft.net/">
                     <h5 class="center-content">Minecraft</h5>
-                    <img class="image-hobbies" src="templates/minecraft.jpg" />
+                    <img class="image-hobbies" src="templates/minecraft.jpg" alt="Minecraft wallpaper"/>
                   </a>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
                   <a class="link-hobbies" href="https://www.guildwars2.com/">
                     <h5 class="center-content">Guild Wars 2</h5>
-                    <img class="image-hobbies" src="templates/Guildwars2.jpg" />
+                    <img class="image-hobbies" src="templates/Guildwars2.jpg" alt="Guild Wars 2 wallpaper"/>
                   </a>
                 </div>
               </div>
               <div class="row div-img-hobbies">
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
                   <a class="link-hobbies" href="https://www.stardewvalley.net/">
                     <h5 class="center-content">Stardew Valley</h5>
-                    <img class="image-hobbies" src="templates/stardew.jpg" />
+                    <img class="image-hobbies" src="templates/stardew.jpg" alt="Stardew Valley wallpaper"/>
                   </a>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
                   <a class="link-hobbies" href="https://www.dofus.com/">
                     <h5 class="center-content">Dofus</h5>
-                    <img class="image-hobbies" src="templates/dofus.jpg" />
+                    <img class="image-hobbies" src="templates/dofus.jpg" alt="Dofus wallpaper"/>
                   </a>
                 </div>
               </div>
               <div>
-                <div class="row div-img-hobbies">
+                <div class="row">
                   <div class="col-lg-12 col-md-12">
                     <a class="link-hobbies" href="http://osu.ppy.sh/">
                       <h5 class="center-content">osu!</h5>
-                      <img class="image-hobbies" src="templates/osu.png" />
+                      <img class="image-hobbies" src="templates/osu.png" alt="osu! wallpaper"/>
                     </a>
                   </div>
                 </div>
