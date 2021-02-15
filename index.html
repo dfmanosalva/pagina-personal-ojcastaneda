@@ -1,207 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-    <script
+    <head>
+        <meta charset="UTF-8" />
+        <link href="style.css" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
+        <!-- David Manosalva: Por buenas practicas, los scripts deben de ser cargado despues del contenido al final del body de la página -->
+        <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"
-    ></script>
-    <title>Personal page ojcastaneda</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark justify-content-md-end fixed-top">
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="navbar-item col-4"></li>
-          <li class="navbar-item active col-md-2">
-            <a class="nav-link" href="#">Welcome</a>
-          </li>
-          <li class="navbar-item col-md-2">
-            <a class="nav-link" href="#my_profile">My profile</a>
-          </li>
-          <li class="navbar-item col-md-2">
-            <a class="nav-link" href="#my_projects">My projects</a>
-          </li>
-          <li class="navbar-item col-md-2">
-            <a class="nav-link" href="#my_hobbies">My hobbies</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <header>
-      <div class="container-fluid">
-        <div class="container main-content">
-          <h1 class="center-content">Welcome to my website</h1>
-          <div class="container">
-            <div class="row">
-              <div class="center-content"><img src="templates/foto.jpg" alt="Profile picture"></div>
+        ></script>
+        <title>Personal page ojcastaneda</title>
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-expand-lg navbar-expand-md navbar-dark justify-content-md-end fixed-top"
+        >
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end"></div>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="navbar-item col-4"></li>
+                    <li class="navbar-item active col-md-2">
+                        <a class="nav-link" href="#">Welcome</a>
+                    </li>
+                    <li class="navbar-item col-md-2">
+                        <a class="nav-link" href="#my_profile">My profile</a>
+                    </li>
+                    <li class="navbar-item col-md-2">
+                        <a class="nav-link" href="#my_projects">My projects</a>
+                    </li>
+                    <li class="navbar-item col-md-2">
+                        <a class="nav-link" href="#my_hobbies">My hobbies</a>
+                    </li>
+                </ul>
             </div>
-            <h3 class="center-content">Music I like:</h3>
-            <div class="row vertical-align">
-              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
-                <h5> Halozy - Kanshou No Matenrou</h5>
-                <audio controls>
-                  <source src="audio/halozy-kanshou%20no%20matenrou.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
-                <h5> Halozy - Genryuu Kaiko</h5>
-                <audio controls>
-                  <source src="audio/Halozy%20-%20Genryuu%20Kaiko.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <div class="row vertical-align">
-              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
-                <h5> Imperial Circus Dead Decadence - Uta</h5>
-                <audio controls>
-                  <source src="audio/Imperial%20Circus%20Dead%20Decadence%20-%20Uta.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 center-content">
-                <h5> Tatsh - Image Material</h5>
-                <audio controls>
-                  <source src="audio/Tatsh%20-%20IMAGE%20-MATERIAL-%20(Version%200).mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container-fluid">
-        <div class="container main-content">
-          <h2 class="center-content" ><span id="my_profile"></span>My Profile</h2>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <section>
-                  <h3>About me:</h3>
-                  <ul>
-                    <li>Name: Oscar Julián Castañeda Gutiérrez</li>
-                    <li>Age: 19 years old</li>
-                    <li>Country: Colombia</li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <section id="academic_experience">
-                  <h3>My academic experience:</h3>
-                  <p>
-                    I am a graduate from the high school academic institution
-                    ASPAEN Gimnasio la Fragua. I am currently on year away from
-                    achieving my bachelors degree at Universidad de los Andes.
-                  </p>
-                </section>
-              </div>
-            </div>
-          </div>
-          <section class="center-content" >
-            <h2><span id="my_projects"></span>My projects</h2>
-            <div class="container center-content">
-              <div>
-                <h4>Meetspot</h4>
-                <iframe
-                  src="https://www.youtube.com/embed/XE_CX5IioUc"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div>
-                <h4>Bicitours</h4>
-                <iframe
-                  src="https://www.youtube.com/embed/1plWrod64PM"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </section>
-          <section class="center-content" >
-            <h2><span id="my_hobbies"></span>My hobbies</h2>
-            <h4>Watching twitch:</h4>
-            <div class="center-content">
-              <iframe
-                src="https://player.twitch.tv/?channel=blackcatshooter&parent=pagina-personal-ojcastaneda.herokuapp.com"
-                height="378"
-                width="620"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <h4>Playing variety games:</h4>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
-                  <a class="link-hobbies" href="https://www.minecraft.net/" target="_blank">
-                    <h5 class="center-content">Minecraft</h5>
-                    <img class="image-hobbies" src="templates/minecraft.jpg" alt="Minecraft wallpaper"/>
-                  </a>
+        </nav>
+        <header>
+            <div class="container-fluid">
+                <div class="container main-content">
+                    <h1 class="center-content">Welcome to my website</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="center-content">
+                                <img
+                                    src="templates/foto.jpg"
+                                    alt="Profile picture"
+                                />
+                            </div>
+                        </div>
+                        <h3 class="center-content">Music I like:</h3>
+                        <div class="row vertical-align">
+                            <div
+                                class="col-lg-6 col-md-6 col-sm-12 center-content"
+                            >
+                                <h5>Halozy - Kanshou No Matenrou</h5>
+                                <audio controls>
+                                    <source
+                                        src="audio/halozy-kanshou%20no%20matenrou.mp3"
+                                        type="audio/mpeg"
+                                    />
+                                    Your browser does not support the audio
+                                    element.
+                                </audio>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-sm-12 center-content"
+                            >
+                                <h5>Halozy - Genryuu Kaiko</h5>
+                                <audio controls>
+                                    <source
+                                        src="audio/Halozy%20-%20Genryuu%20Kaiko.mp3"
+                                        type="audio/mpeg"
+                                    />
+                                    Your browser does not support the audio
+                                    element.
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="row vertical-align">
+                            <div
+                                class="col-lg-6 col-md-6 col-sm-12 center-content"
+                            >
+                                <h5>Imperial Circus Dead Decadence - Uta</h5>
+                                <audio controls>
+                                    <source
+                                        src="audio/Imperial%20Circus%20Dead%20Decadence%20-%20Uta.mp3"
+                                        type="audio/mpeg"
+                                    />
+                                    Your browser does not support the audio
+                                    element.
+                                </audio>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-sm-12 center-content"
+                            >
+                                <h5>Tatsh - Image Material</h5>
+                                <audio controls>
+                                    <source
+                                        src="audio/Tatsh%20-%20IMAGE%20-MATERIAL-%20(Version%200).mp3"
+                                        type="audio/mpeg"
+                                    />
+                                    Your browser does not support the audio
+                                    element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
-                  <a class="link-hobbies" href="https://www.guildwars2.com/" target="_blank">
-                    <h5 class="center-content">Guild Wars 2</h5>
-                    <img class="image-hobbies" src="templates/Guildwars2.jpg" alt="Guild Wars 2 wallpaper"/>
-                  </a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
-                  <a class="link-hobbies" href="https://www.stardewvalley.net/" target="_blank">
-                    <h5 class="center-content">Stardew Valley</h5>
-                    <img class="image-hobbies" src="templates/stardew.jpg" alt="Stardew Valley wallpaper"/>
-                  </a>
-                </div>
-                <div class="col-lg-6 col-md-12 vertical-align div-img-hobbies">
-                  <a class="link-hobbies" href="https://www.dofus.com/" target="_blank">
-                    <h5 class="center-content">Dofus</h5>
-                    <img class="image-hobbies" src="templates/dofus.jpg" alt="Dofus wallpaper"/>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                    <a class="link-hobbies" href="http://osu.ppy.sh/" target="_blank">
-                      <h5 class="center-content">osu!</h5>
-                      <img class="image-hobbies" src="templates/osu.png" alt="osu! wallpaper"/>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="container-fluid">
-        <address>Contact me at: oj.castaneda@unindes.edu.co</address>
-      </div>
-    </footer>
-  </body>
-
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="container main-content">
+                    <h2 class="center-content">
+                        <span id="my_profile"></span>My Profile
+                    </h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <section>
+                                    <h3>About me:</h3>
+                                    <ul>
+                                        <li>
+                                            Name: Oscar Julián Castañeda
+                                            Gutiérrez
+                                        </li>
+                                        <li>Age: 19 years old</li>
+                                        <li>Country: Colombia</li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <section id="academic_experience">
+                                    <h3>My academic experience:</h3>
+                                    <p>
+                                        I am a graduate from the high school
+                                        academic institution ASPAEN Gimnasio la
+                                        Fragua. I am currently on year away from
+                                        achieving my bachelors degree at
+                                        Universidad de los Andes.
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="center-content">
+                        <h2><span id="my_projects"></span>My projects</h2>
+                        <div class="container center-content">
+                            <div>
+                                <h4>Meetspot</h4>
+                                <iframe
+                                    src="https://www.youtube.com/embed/XE_CX5IioUc"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div>
+                                <h4>Bicitours</h4>
+                                <iframe
+                                    src="https://www.youtube.com/embed/1plWrod64PM"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="center-content">
+                        <h2><span id="my_hobbies"></span>My hobbies</h2>
+                        <h4>Watching twitch:</h4>
+                        <div class="center-content">
+                            <iframe
+                                src="https://player.twitch.tv/?channel=blackcatshooter&parent=pagina-personal-ojcastaneda.herokuapp.com"
+                                height="378"
+                                width="620"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <h4>Playing variety games:</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 col-md-12 vertical-align div-img-hobbies"
+                                >
+                                    <a
+                                        class="link-hobbies"
+                                        href="https://www.minecraft.net/"
+                                        target="_blank"
+                                    >
+                                        <h5 class="center-content">
+                                            Minecraft
+                                        </h5>
+                                        <img
+                                            class="image-hobbies"
+                                            src="templates/minecraft.jpg"
+                                            alt="Minecraft wallpaper"
+                                        />
+                                    </a>
+                                </div>
+                                <div
+                                    class="col-lg-6 col-md-12 vertical-align div-img-hobbies"
+                                >
+                                    <a
+                                        class="link-hobbies"
+                                        href="https://www.guildwars2.com/"
+                                        target="_blank"
+                                    >
+                                        <h5 class="center-content">
+                                            Guild Wars 2
+                                        </h5>
+                                        <img
+                                            class="image-hobbies"
+                                            src="templates/Guildwars2.jpg"
+                                            alt="Guild Wars 2 wallpaper"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 col-md-12 vertical-align div-img-hobbies"
+                                >
+                                    <a
+                                        class="link-hobbies"
+                                        href="https://www.stardewvalley.net/"
+                                        target="_blank"
+                                    >
+                                        <h5 class="center-content">
+                                            Stardew Valley
+                                        </h5>
+                                        <img
+                                            class="image-hobbies"
+                                            src="templates/stardew.jpg"
+                                            alt="Stardew Valley wallpaper"
+                                        />
+                                    </a>
+                                </div>
+                                <div
+                                    class="col-lg-6 col-md-12 vertical-align div-img-hobbies"
+                                >
+                                    <a
+                                        class="link-hobbies"
+                                        href="https://www.dofus.com/"
+                                        target="_blank"
+                                    >
+                                        <h5 class="center-content">Dofus</h5>
+                                        <img
+                                            class="image-hobbies"
+                                            src="templates/dofus.jpg"
+                                            alt="Dofus wallpaper"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <a
+                                            class="link-hobbies"
+                                            href="http://osu.ppy.sh/"
+                                            target="_blank"
+                                        >
+                                            <h5 class="center-content">osu!</h5>
+                                            <img
+                                                class="image-hobbies"
+                                                src="templates/osu.png"
+                                                alt="osu! wallpaper"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container-fluid">
+                <!-- David Manosalva: Se puede usar un ancla que haga el direccionamiento hacia el correo electronico, eso se logra al añadir "mailto:" a la referencia del ancla -->
+                <address>Contact me at: oj.castaneda@unindes.edu.co</address>
+            </div>
+        </footer>
+    </body>
 </html>
